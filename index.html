@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Patel - Full Stack Developer</title>
+    <style>
+        :root {
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            --card-background: #1e1e1e;
+            --border-color: #333333;
+            --muted-color: #a0a0a0;
+            --accent-color: #00bcd4;
+            --hover-color: #00acc1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: var(--muted-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2, h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            color: var(--text-color);
+        }
+
+        p {
+            color: var(--muted-color);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .skills-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-icons img {
+            width: 30px;
+            height: 30px;
+            filter: invert(1);
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        /* New style for university names */
+        .university-name {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Om Patel</div>
+            <h1>Full Stack Developer & Software Developer</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>EXPERIENCED FULL STACK DEVELOPER | PROFICIENT IN SYSTEM DESIGN & AUTOMATION
+                SOFTWARE ENGINEERING | DATA SCIENCE | NATURAL LANGUAGE PROCESSING | CLOUD-BASED PLATFORMS</p>
+        </section>
+
+        <section id="education" class="card">
+            <h2>Education</h2>
+            <p><span class="university-name">Pace University, Seidenberg School of Computer Science - NYC</span><br>Master of Science in Computer Science | GPA: 3.4/4 | May 2025</p>
+            <p><span class="university-name">Vellore Institute of Technology (VIT) - Chennai</span><br>Bachelor of Technology in Computer Science | GPA: 3.14/4 | May 2023</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Scripting & Programming</h3>
+                    <p>Python, C++, Java, JavaScript, HTML, PHP, SQL, Spring Boot, REST, T-SQL, TypeScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Platforms</h3>
+                    <p>React, Node.js, Angular, Express.js, Flask, Django, .NET</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>MySQL, PostgreSQL, MongoDB, Firebase</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS (EC2, S3, Lambda), Docker, Kubernetes, Jenkins</p>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <p>TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, NLP</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Mobile Development</h3>
+                    <p>React Native, Android Development (Java, Kotlin)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Version Control & Tools</h3>
+                    <p>Git, GitHub, Postman, Google Analytics, Adobe Suite</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Operating Systems</h3>
+                    <p>Mac OS, Windows, Linux</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="card">
+            <h2>Experience</h2>
+
+            <h3>Frontend Developer Intern - We Rebel LLC</h3>
+            <ul>
+                <li>Developed a Spotify-like mobile app using React, TypeScript, and Material UI.</li>
+                <li>Integrated Django backend components and scripted backend functionalities using Python.</li>
+                <li>Deployed applications on Google Cloud, implementing 6+ RESTful APIs.</li>
+                <li>Optimized user experience for cross-platform compatibility (Web, Android, iOS, Windows, Mac OS).</li>
+            </ul>
+
+            <h3>Software Developer Intern - iQuadra Information Service</h3>
+            <ul>
+                <li>Led frontend development of a remote interview platform using React, Angular, and Chakra UI.</li>
+                <li>Designed and implemented an AI-powered interactive video assessment system.</li>
+                <li>Deployed the platform on AWS and integrated MySQL databases.</li>
+                <li>Automated testing and debugging, reducing system downtime by 90%.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+
+            <h3>AI Chatbot for Flood Prediction</h3>
+            <ul>
+                <li>Developed an AI chatbot using IBM WatsonX for flood prediction and prevention.</li>
+                <li>Built a flood trend monitoring prototype using Raspberry Pi and sensors.</li>
+                <li>Secured 3rd place at the NY Climate Exchange competition.</li>
+            </ul>
+
+            <h3>Image Captioning Automation</h3>
+            <ul>
+                <li>Developed an image captioning system using TensorFlow and Keras.</li>
+                <li>Implemented InceptionV3 for feature extraction and a hybrid GRU-LSTM neural network.</li>
+                <li>Achieved 94.2% accuracy in caption generation.</li>
+            </ul>
+
+            <h3>Deep-Fake Detection System</h3>
+            <ul>
+                <li>Designed a CNN-based system for detecting deep-fake images.</li>
+                <li>Trained MobileNet & VGG16 models using 140k+ real & fake facial images.</li>
+                <li>Achieved up to 99% accuracy in deep-fake detection.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact</h2>
+            <p class="contact-info">Email: <a href="mailto:patelsanjayom2001@gmail.com">patelsanjayom2001@gmail.com</a></p>
+            <p class="contact-info">Phone: <a href="tel:+19295832385">(929) 583-2385</a></p>
+            <p>Location: Jersey City, NJ</p>
+            <div class="contact-icons">
+                <a href="https://github.com/OSP06" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/om-sanjay-patel" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
